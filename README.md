@@ -1,129 +1,84 @@
 # Nourish
 
-A food tracking app focused on nourishment and health goals instead of calorie counting.
+Nourish is a food tracking app focused on nourishment and specific wellness goals instead of calorie counting.
 
-The goal of this app is to help people (primarily women) understand how their food supports specific outcomes like skin health, gut health, and pregnancy preparation — without triggering restrictive eating patterns.
+The product is designed for women who want practical, evidence-informed nutrition support for goals like:
 
----
+- Glowy skin
+- Healthy gut
+- Pregnancy prep
 
-## Vision
+without diet-culture framing or restrictive tracking patterns.
 
-Most nutrition apps are built around weight loss and calorie restriction.  
-Nourish is designed to:
+## Core Product Principles
 
-- Encourage adding nourishing foods instead of restricting
-- Focus on nutrient diversity and food quality
-- Provide gentle, supportive insights
-- Avoid calorie counting entirely
+- **No calorie counting anywhere in the UI**
+- **No weight-loss framing**
+- **No red deficit warnings**
+- **Supportive, additive language** ("what to include")
+- **Nutrient pattern and food variety tracking**
 
----
+## Why this app exists
 
-## Core Features (MVP)
+Many nutrition apps can unintentionally encourage fixation on calorie numbers. Nourish takes a different route:
 
-Users can:
+- Track meals and foods
+- Convert foods into nutrient-support tags
+- Show progress toward nutrient-supportive patterns
+- Provide gentle, practical suggestions
 
-1. Select a health goal
-   - Glowy skin
-   - Healthy gut
-   - Pregnancy prep
+## Goal Tracks (MVP)
 
-2. Log meals
-   - Simple food search
-   - Quick add foods
+Goal profiles are stored in [`data/goal_profiles.json`](data/goal_profiles.json).
 
-3. Track nourishment categories instead of calories
-   Examples:
-   - Fiber sources
+1. **Glowy Skin**
+   - Vitamin C-rich produce
+   - Carotenoid-rich produce
    - Omega-3 sources
+   - Protein anchors
+
+2. **Healthy Gut**
+   - Fiber-rich foods
+   - Prebiotic foods
    - Fermented foods
-   - Iron-rich foods
+   - Polyphenol-rich plants
+
+3. **Pregnancy Prep**
    - Folate-rich foods
+   - Iron-rich foods
+   - Choline sources
+   - Omega-3 sources
 
-4. See gentle daily insights
-   Examples:
-   - "You added several fiber foods today."
-   - "Adding a fermented food may support gut health."
+## Evidence-backed framework
 
-5. Optional symptom tracking
-   - Bloating
-   - Energy
-   - Skin changes
+Scientific rationale and references are documented in [`docs/evidence.md`](docs/evidence.md), including:
 
----
+- Skin appearance and low-glycemic dietary pattern studies
+- Dietary fiber and fermented food evidence for gut health
+- Folic acid, iron, and choline relevance for preconception nutrition
 
-## Design Principles
+## Example data model (high level)
 
-This app must:
+- `users`
+- `goals`
+- `foods`
+- `food_tags`
+- `meals`
+- `meal_items`
+- `symptom_logs` (optional)
 
-- Never display calories
-- Never show "remaining" targets
-- Avoid red warning states or restrictive language
-- Focus on encouragement and additions
-- Use neutral and supportive tone
+## Suggested first build sequence
 
----
+1. Build food logging + search
+2. Add deterministic food tag mapping
+3. Show daily goal-track dashboard (no calories)
+4. Add positive nudges and simple substitutions
+5. Add optional symptom correlation view
 
-## Target Users
+## Medical and safety posture
 
-Primary audience:
-- Women interested in wellness
-- People who want nutrition guidance without diet culture
-- People preparing for pregnancy
-- People improving gut or skin health
+Nourish should always be educational and supportive, not diagnostic.
 
----
+Recommended in-app disclaimer:
 
-## Data Model (High Level)
-
-Users
-Meals
-Foods
-FoodTags
-MealItems
-Symptoms
-
----
-
-## Example Food Tags
-
-fiber  
-omega3  
-fermented  
-iron  
-folate  
-vitamin_c  
-protein_anchor  
-zinc  
-prebiotic  
-
----
-
-## Tech Direction (Initial)
-
-Frontend:
-Mobile app (React Native or Flutter)
-
-Backend:
-Simple API + database
-
-Database:
-Postgres or Supabase
-
----
-
-## Future Features
-
-- Photo meal logging
-- Grocery list suggestions
-- Weekly nourishment reports
-- Cycle-aware nutrition insights
-- Personalized recommendations
-
----
-
-## Philosophy
-
-Nourish is not a diet app.  
-It is a nourishment and awareness tool.
-
-The experience should feel calm, supportive, and positive.
+> Nourish provides general educational information and is not a substitute for medical advice, diagnosis, or treatment. If you are pregnant, trying to conceive, or have a medical condition, consult a qualified healthcare professional.
