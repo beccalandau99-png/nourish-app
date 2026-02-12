@@ -82,3 +82,15 @@ Nourish should always be educational and supportive, not diagnostic.
 Recommended in-app disclaimer:
 
 > Nourish provides general educational information and is not a substitute for medical advice, diagnosis, or treatment. If you are pregnant, trying to conceive, or have a medical condition, consult a qualified healthcare professional.
+
+## How to run locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the Next.js development server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
