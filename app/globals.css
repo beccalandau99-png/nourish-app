@@ -1,0 +1,83 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #1c2a2f;
+  background: #f6fbfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6fbfb;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #e2f3ef;
+  border-bottom: 1px solid #c4e0da;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #16353a;
+  font-weight: 600;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d6e7e3;
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+.cta-link {
+  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  background: #2f7a74;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7px;
+}
