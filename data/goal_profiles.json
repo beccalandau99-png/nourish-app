@@ -1,0 +1,97 @@
+{
+  "goals": [
+    {
+      "id": "glowy_skin",
+      "name": "Glowy Skin",
+      "description": "Support skin appearance and barrier function through nutrient-dense foods.",
+      "daily_focus": [
+        {
+          "tag": "vitamin_c",
+          "label": "Vitamin C-rich produce",
+          "target_type": "servings",
+          "suggested_range": "2-4"
+        },
+        {
+          "tag": "carotenoid_rich",
+          "label": "Orange/green produce",
+          "target_type": "servings",
+          "suggested_range": "1-3"
+        },
+        {
+          "tag": "omega3",
+          "label": "Omega-3 sources",
+          "target_type": "servings",
+          "suggested_range": "1-2"
+        },
+        {
+          "tag": "protein_anchor",
+          "label": "Protein anchors",
+          "target_type": "servings",
+          "suggested_range": "2-3"
+        }
+      ]
+    },
+    {
+      "id": "healthy_gut",
+      "name": "Healthy Gut",
+      "description": "Promote microbiome diversity and digestive comfort.",
+      "daily_focus": [
+        {
+          "tag": "fiber",
+          "label": "Fiber-rich foods",
+          "target_type": "variety_count",
+          "suggested_range": "5-10"
+        },
+        {
+          "tag": "prebiotic",
+          "label": "Prebiotic foods",
+          "target_type": "servings",
+          "suggested_range": "1-3"
+        },
+        {
+          "tag": "fermented",
+          "label": "Fermented foods",
+          "target_type": "servings",
+          "suggested_range": "1-2"
+        },
+        {
+          "tag": "polyphenol_rich",
+          "label": "Polyphenol-rich plants",
+          "target_type": "servings",
+          "suggested_range": "2-4"
+        }
+      ]
+    },
+    {
+      "id": "pregnancy_prep",
+      "name": "Pregnancy Prep",
+      "description": "Build nutrient patterns commonly recommended before conception.",
+      "daily_focus": [
+        {
+          "tag": "folate",
+          "label": "Folate-rich foods",
+          "target_type": "servings",
+          "suggested_range": "2-4"
+        },
+        {
+          "tag": "iron",
+          "label": "Iron-rich foods",
+          "target_type": "servings",
+          "suggested_range": "1-3"
+        },
+        {
+          "tag": "choline",
+          "label": "Choline sources",
+          "target_type": "servings",
+          "suggested_range": "1-2"
+        },
+        {
+          "tag": "omega3",
+          "label": "Omega-3 sources",
+          "target_type": "servings",
+          "suggested_range": "1-2"
+        }
+      ]
+    }
+  ]
+}
